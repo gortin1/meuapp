@@ -1,41 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
         android:gravity="center">
-
-        <?xml version="1.0" encoding="utf-8"?>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
-
+            android:padding="16dp">>
             <EditText
-                android:id="@+id/editPeso"
+                android:id="@+id/nota1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Digite seu peso (kg)"
+                android:hint="digite sua primeira nota"
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/editAltura"
+                android:id="@+id/nota2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Digite sua altura (m)"
+                android:hint="Digite sua segunda nota"
                 android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/btnCalcular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calcular IMC" />
+                android:text="calcular nota" />
 
             <TextView
                 android:id="@+id/textResultado"
@@ -43,17 +48,15 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="20dp"
-                android:text="Seu IMC aparecerá aqui"
+                android:text="Seu Nota aparecerá aqui: "
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
-
         <Button
             android:id="@+id/btnVoltar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Voltar"/>
+            android:text="Voltar" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,5 +16,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SegundaActivity::class.java)
             startActivity(intent)
         }
+        val btnIrParaTerceira = findViewById<Button>(R.id.btnIrParaTerceira)
+        btnIrParaTerceira.setOnClickListener {
+            val intent = Intent(this, TerceiraActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
